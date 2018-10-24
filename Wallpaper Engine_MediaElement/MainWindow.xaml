@@ -1,0 +1,13 @@
+﻿<Window x:Name="Main" x:Class="Wallpaper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wallpaper"
+        mc:Ignorable="d"
+        Title="WallpaperEngine" Height="1080" Width="1920" Loaded="Main_Loaded" ShowInTaskbar="False" WindowStyle="None" Visibility="Visible" Background="Black" AllowsTransparency="True">
+    <Grid>
+        <MediaElement x:Name="media" HorizontalAlignment="Center" Height="1080" Width="1920" LoadedBehavior="Manual" UnloadedBehavior="Manual" />
+
+    </Grid>
+</Window>

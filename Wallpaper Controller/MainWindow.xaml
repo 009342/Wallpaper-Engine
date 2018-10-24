@@ -1,0 +1,19 @@
+﻿<Window x:Name="Main" x:Class="Wallpaper_Controller.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wallpaper_Controller"
+        mc:Ignorable="d"
+        Title="Wallpaper Controller" Height="245.1" Width="237.5" Loaded="Main_Loaded">
+    <Grid>
+        <Button x:Name="test" Content="재생" HorizontalAlignment="Left" Height="32" Margin="10,65,0,0" VerticalAlignment="Top" Width="211" Click="test_Click"/>
+        <CheckBox x:Name="loop" Content="무한반복" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="loop_Click"/>
+        <Label x:Name="connectedHandle" Content="연결된 엔진이 없음." HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="stop_media" Content="정지" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="211" Height="32" Click="stop_media_Click"/>
+        <Slider x:Name="volume" HorizontalAlignment="Left" Height="26" Margin="64,34,0,0" VerticalAlignment="Top" Width="157" Maximum="1" LargeChange="0.1" SmallChange="0.01" ValueChanged="volume_ValueChanged" Value="0.5"/>
+        <Label Content="볼륨" HorizontalAlignment="Left" Height="24" Margin="10,26,0,0" VerticalAlignment="Top" Width="37"/>
+        <Button x:Name="turnOff" Content="엔진 종료" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="211" Height="32" Click="turnOff_Click"/>
+
+    </Grid>
+</Window>
